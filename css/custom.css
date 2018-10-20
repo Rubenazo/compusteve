@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'graffiti';
+    src: url('planet_benson.ttf') format('truetype');
+}
+
+#steve {
+	width: 350px;
+}
+
+.card {
+	border-radius: 12px;
+}
+
+.dialog1 {
+	height: 50vh;
+}
+.dialog1 .card {
+	border-bottom-right-radius: 0;
+}
+
+.dialog2 {
+	height: 75vh;
+}
+.dialog2 .card {
+	border-bottom-left-radius: 0;
+}
+
+.graffiti {
+	font-family: graffiti;
+}
+
+body {
+	background: linear-gradient(262deg, #ff7854, #fd267d);
+	text-align: center;
+}
+
+h1 {
+	font-family: graffiti;
+	margin-bottom: 60px;
+}
+
+input.btn {
+	margin-top: 30px;
+}
+
+label:first-of-type {
+	margin-right: 30px;
+}
+
+
+@keyframes tilt {
+    from {
+    	-webkit-transform: rotate(-15deg);
+    	   -moz-transform: rotate(-15deg);
+    	    -ms-transform: rotate(-15deg);
+    	     -o-transform: rotate(-15deg);
+    	        transform: rotate(-15deg);
+    }
+    to {
+    	-webkit-transform: rotate(15deg);
+    	   -moz-transform: rotate(15deg);
+    	    -ms-transform: rotate(15deg);
+    	     -o-transform: rotate(15deg);
+    	        transform: rotate(15deg);
+    }
+}
+
+@keyframes roll {
+    from {
+    	-webkit-transform: rotate(0deg);
+    	   -moz-transform: rotate(0deg);
+    	    -ms-transform: rotate(0deg);
+    	     -o-transform: rotate(0deg);
+    	        transform: rotate(0deg);
+    }
+    to {
+    	-webkit-transform: rotate(359deg);
+    	   -moz-transform: rotate(359deg);
+    	    -ms-transform: rotate(359deg);
+    	     -o-transform: rotate(359deg);
+    	        transform: rotate(359deg);
+    }
+}
